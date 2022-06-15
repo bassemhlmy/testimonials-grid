@@ -1,0 +1,143 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #edf2f8;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 10rem auto;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  column-gap: 3rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.testimonial {
+  padding: 1.8rem;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.testimonial h4 {
+  font-size: 2.3rem;
+  padding-bottom: 2.8rem;
+  font-weight: 600;
+}
+
+.testimonial h5 {
+  font-size: 1.5rem;
+}
+
+.testimonial h6 {
+  font-size: 1.25rem;
+  filter: opacity(0.4);
+}
+
+.testimonial p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  filter: opacity(0.6);
+}
+
+.testimonial-header {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.id {
+  padding-bottom: 2.8rem;
+}
+
+.testimonial img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.testimonial-one {
+  background: #733fc8;
+  background-image: url('/images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top 1% right 8%;
+  background-size: 110px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.testimonial-two {
+  background: #49556b;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.testimonial-three,
+.testimonial-five {
+  background: #fff;
+}
+
+.testimonial-three p,
+.testimonial-five p {
+  color: rgba(0, 0, 0, 0.705);
+  font-weight: 600;
+}
+
+.testimonial-four {
+  background: #18202d;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+@media (min-width: 1440px) {
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .testimonial-one {
+    grid-column: 1/3;
+  }
+
+  .testimonial-two {
+    grid-column: 3/4;
+  }
+
+  .testimonial-three {
+    grid-column: 1/2;
+    grid-row: 2/-1;
+  }
+
+  .testimonial-four {
+    grid-column: 2/4;
+    grid-row: 2/-1;
+  }
+
+  .testimonial-five {
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+  }
+}
